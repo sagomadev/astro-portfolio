@@ -1,0 +1,58 @@
+---
+import { Icon } from 'astro-icon/components'
+import { Image } from "astro:assets";
+import yo from "@/assets/yo.svg";
+---
+<nav>
+  <ul>
+    <li><a href="/projects">Home</a></li>
+    <li><a href="/projects">Projects</a></li>
+  <Image src={yo} alt="Hero Image" class="avatar" width={60} />
+    
+    <li><a href="/about">About Me</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #fcc;
+    margin: 0;;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  a:hover {
+    color: var(--primary-color);
+  }
+  .avatar {
+    margin: 0 1rem;
+    border-radius: 50%;
+    border: 3px solid #fcc;
+    podition: relative;
+    transform: scale(1.2);
+    background-color: #fff;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.5) translateY(8px);
+    }
+  }
+</style>

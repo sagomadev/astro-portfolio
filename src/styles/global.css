@@ -16,6 +16,21 @@ a {
 }
 
 /* INITIAL STYLES */
+:root {
+  --color-50: #fef2f2;
+  --color-100: #ffe1e1;
+  --color-200: #ffcccc;
+  --color-300: #fea3a3;
+  --color-400: #fb6e6e;
+  --color-500: #f24141;
+  --color-600: #e02222;
+  --color-700: #bc1919;
+  --color-800: #9b1919;
+  --color-900: #811b1b;
+  --color-950: #460909;
+}
+
 body {
+  color: var(--color-950);
   font-family: "Poppins", sans-serif;
 }

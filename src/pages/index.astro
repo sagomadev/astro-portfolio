@@ -4,5 +4,38 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="Home Page" description="Bienvenida a mi Portfolio de FrontEnd Developer">
+  <section id="home" class="hero">
+      <h1 class="hero__title">Hola, soy <span class="hero__title--name">Samuel</span></h1>
+      <p class="hero__description">FrontEnd Developer</p>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about__content">
+      <h2 class="about__title">Sobre mi</h2>
+      <p class="about__description">Soy un FrontEnd Developer con experiencia en el desarrollo de aplicaciones web. Me encanta aprender nuevas tecnologías y compartir mis conocimientos con la comunidad.</p>
+    </div>
+  </section>
+  <section class="skills">
+    <div class="skills__content">
+      <h2 class="skills__title">Habilidades</h2>
+      <ul class="skills__list">
+        <li class="skills__item">HTML</li>
+        <li class="skills__item">CSS</li>
+        <li class="skills__item">JavaScript</li>
+        <li class="skills__item">React</li>
+        <li class="skills__item">Vue</li>
+        <li class="skills__item">Svelte</li>
+      </ul>
+    </div>
+  </section>
+  
 </BaseLayout>
+
+<style>
+.hero {
+  background: url(/imagen-arbol.png) no-repeat center right/cover;
+  margin-top: 2rem;    aspect-ratio: 16/9;
+  padding: 2rem;
+ }
+</style>
 

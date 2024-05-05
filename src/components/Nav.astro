@@ -6,11 +6,10 @@ import yo from "@/assets/yo.svg";
 <nav>
   <ul>
     <li><a href="/projects">Home</a></li>
-    <li><a href="/projects">Projects</a></li>
-  <Image src={yo} alt="Hero Image" class="avatar" width={60} />
-    
     <li><a href="/about">About Me</a></li>
+    <Image src={yo} alt="Hero Image" class="avatar" width={60} />
     <li><a href="/contact">Contact</a></li>
+    <li><a href="/projects">Projects</a></li>
   </ul>
 </nav>
 
@@ -19,40 +18,59 @@ import yo from "@/assets/yo.svg";
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px #fcc;
-    margin: 0;;
+    box-shadow: 0 0 10px var(--color-200);
+    margin: 0;
+    min-height: 60px;
+
   }
 
   ul {
+          max-width: 1200px;
+  margin: 0 auto;
+    width: 100%;;
     display: flex;
     list-style: none;
     align-items: center;
+    justify-content: space-between;
     padding: 0;
   }
 
   li {
     margin: 0 1rem;
+    width: 100%;
+    margin: 0;
+    text-align: center;
   }
 
   a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--color-950);
   }
 
   a:hover {
-    color: var(--primary-color);
+    color: var(--color-600);
+    font-weight: 700;
   }
   .avatar {
+    display: none;;
     margin: 0 1rem;
-    border-radius: 50%;
-    border: 3px solid #fcc;
+    box-shadow: 0 0 0px var(--color-200);
     podition: relative;
-    transform: scale(1.2);
-    background-color: #fff;
-    transition: transform 0.3s;
+    /* background-color: #fff; */
+    transition: transform 0.3s, box-shadow 0.5s 0.1s, border-radius 0.1s, background-color 0.5s;
 
+   
     &:hover {
-      transform: scale(1.5) translateY(8px);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--color-200);
+      transform: scale(1.5) translateY(12px);
+      background-color: var(--color-100);
     }
   }
+  @media(width > 419px){
+    .avatar {
+      display: block;
+    }
+  }
+
 </style>

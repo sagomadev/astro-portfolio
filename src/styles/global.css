@@ -17,20 +17,30 @@ a {
 
 /* INITIAL STYLES */
 :root {
-  --color-50: #fef2f2;
-  --color-100: #ffe1e1;
-  --color-200: #ffcccc;
-  --color-300: #fea3a3;
-  --color-400: #fb6e6e;
-  --color-500: #f24141;
-  --color-600: #e02222;
-  --color-700: #bc1919;
-  --color-800: #9b1919;
-  --color-900: #811b1b;
-  --color-950: #460909;
+  --color-50: #eeefff;
+  --color-100: #dfe1ff;
+  --color-200: #ccccff;
+  --color-300: #a5a3fe;
+  --color-400: #8d7ffa;
+  --color-500: #7a60f4;
+  --color-600: #6d43e8;
+  --color-700: #5f35cd;
+  --color-800: #4d2ea5;
+  --color-900: #412c83;
+  --color-950: #271a4c;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   color: var(--color-950);
   font-family: "Poppins", sans-serif;
+  background-color: var(--color-50);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
